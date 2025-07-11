@@ -1,3 +1,7 @@
+const { install } = require('playwright/install');
+install(); // ← これで自動的にブラウザインストールが走る
+
+
 const { chromium } = require("playwright");
 
 (async () => {
