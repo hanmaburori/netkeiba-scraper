@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: netkeiba-scraper
+    runtime: node
+    buildCommand: npm install && npx playwright install
+    startCommand: node scrape.js
+    branch: main
+    region: singapore
+    plan: free
